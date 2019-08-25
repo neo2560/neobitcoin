@@ -1,0 +1,49 @@
+1) npm init
+
+# refer https://github.com/bitpay/bitcore-lib/blob/master/docs/index.md
+# https://github.com/bitpay/bitcore-lib/tree/master/docs
+
+2) 
+Type	Name	Latest commit message	Commit time
+..		
+address.md	Fix wrong property name in docs (Address.Pay2PubKeyHash)	3 years ago
+block.md	format docs	4 years ago
+browser.md	Update browser docs.	4 years ago
+crypto.md	Incorrect namespace for 'crypto' modules	3 years ago
+encoding.md	format docs	4 years ago
+examples.md	Use `Buffer.from()` instead of `new Buffer()`	last year
+hierarchical.md	update hierarchical key docs	3 years ago
+index.md	update doc	9 months ago
+networks.md	Networks: Added regtest to networks	4 years ago
+privatekey.md	format docs	4 years ago
+publickey.md	format docs	4 years ago
+script.md	format docs	4 years ago
+transaction.md	Fix typos in documentation	4 years ago
+unit.md	format docs	4 years ago
+unspentoutput.md	format docs	4 years ago
+uri.md
+
+3) 
+npm install bitcore --save (wrong)
+
+https://github.com/bitpay/bitcore/tree/v8.0.0/packages/bitcore-lib
+
+4) npm install bitcore-lib --save 
+add bip38, wif
+
+5) Look at libraries like Address
+https://github.com/bitpay/bitcore/blob/v8.0.0/packages/bitcore-lib/lib/privatekey.js
+
+
+var privateKey = new bitcore.PrivateKey();
+
+var address = privateKey.toAddress();
+
+
+6) 
+Get testcoins
+Configure and perform transactions
+
+7) Look for utxo
+
+8) Look for loosing balance
